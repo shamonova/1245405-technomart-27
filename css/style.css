@@ -1,0 +1,140 @@
+@font-face {
+	font-family: "Cuprum";
+	src: url("../fonts/web/cuprum.woff");
+	font-style: normal;
+	font-weight: normal;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "PT Sans", Cuprum, Arial;
+  font-size: 14px;
+  line-height: normal;
+  font-weight: 700;
+  color: black;
+  background-color: white;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  width: 940px;
+  margin: 0 auto;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.main-navigation {
+  font-size: 17px;
+  line-height: 18px;
+  color: #fff;
+  background-color: #293449;
+  list-style: none;
+}
+
+.main-navigation a {
+  color: #fff;
+}
+
+.main-navigation a:hover,
+.main-navigation a:focus {
+  background-color: #212a3a
+}
+
+.text {
+  color: #ee3643;
+  font-size: 16px;
+  line-height: 23px;
+}
+
+.tel-number {
+  color: #ee3643
+  font-size: 21 px;
+  line-height: 21px;
+  font-weight: 400;
+}
+
+.tel-icon {
+  vertical-align: sub;
+}
+
+.address {
+  color: #32425c
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 400;
+}
+
+.user-navigation {
+  color: #000;
+  font-size: 21px;
+  line-height: 21px;
+  font-weight: 400;
+}
+
+.site-navigation {
+  color: #ffffff;
+  font-size: 17px;
+  line-height: 17px;
+  font-weight:400;
+  background-color: #32425c;
+  width: 940px;
+  height: 60px;
+}
+
+banner {
+  width: 300;
+  height: 123px;
+  background-color: #ffbf47;
+}
+
+.banner-blue {
+  background-color: #3bbce3;
+}
+
+.banner-lilac {
+  background-color: #dc91d8;
+}
+
+.banner-green {
+  background-color: #8ed78f;
+}
+
+.banner-orange {
+  background-color: #ffc847;
+}
+
+.gallery {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 20px;
+  width: 220px;
+  height: 318px;
+  border: 1px solid #eaeaea;
+  background-color: #fff;
+}
+
+.product-name {
+  width: 185px;
+  height: 43px;
+  color: #000;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 20px;
+}
+
+.value {
+  color: #fff;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 18px;
+  text-transform: uppercase;
+  width: 141px;
+  height: 48px;
+  background-color: #ee3643;
+}
