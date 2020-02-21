@@ -5,6 +5,10 @@
 	font-weight: normal;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -53,7 +57,7 @@ a {
 }
 
 .tel-number {
-  color: #ee3643
+  color: #ee3643;
   font-size: 21 px;
   line-height: 21px;
   font-weight: 400;
@@ -64,7 +68,7 @@ a {
 }
 
 .address {
-  color: #32425c
+  color: #32425c;
   font-size: 14px;
   line-height: 24px;
   font-weight: 400;
@@ -74,7 +78,7 @@ a {
   color: #000;
   font-size: 21px;
   line-height: 21px;
-  font-weight: 400;
+  font-weight: 400px;
 }
 
 .site-navigation {
@@ -87,10 +91,43 @@ a {
   height: 60px;
 }
 
-banner {
-  width: 300;
+.visually-hidden {
+  font-size: 0;
+  visibility: hidden;
+}
+
+.banner {
+  width: 300px;
   height: 123px;
+  padding: 20px 23px;
   background-color: #ffbf47;
+}
+
+.banner-title {
+  margin: 0 0 13px;
+  color: #fff;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 30px;
+}
+
+.banner-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 135px;
+  height: 38px;
+  background-color: rgba(255, 255, 255, .1);
+  color: #fff;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+
+.banner-img {
+  float: right;
+  margin: 11px 23px 0 0;
 }
 
 .banner-blue {
@@ -124,7 +161,7 @@ banner {
   height: 43px;
   color: #000;
   font-size: 18px;
-  font-weight: 700;
+  font-weight: 700px;
   line-height: 20px;
 }
 
