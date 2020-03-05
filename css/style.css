@@ -5,22 +5,91 @@
 	font-weight: normal;
 }
 
-* {
-  box-sizing: border-box;
-}
 
 body {
   margin: 0;
   padding: 0;
-  font-family: "PT Sans", Cuprum, Arial;
+  font-family: "PT Sans", "Cuprum", "Arial";
   font-size: 14px;
-  line-height: normal;
-  font-weight: 700px;
-  color: black;
-  background-color: white;
 }
 
-a {
+.container {
+  width: 960px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  box-sizing: border-box;
+}
+
+/*header*/
+
+header a {
+	text-decoration: none;
+}
+
+header .main-navigation {
+  background-color: #293449;
+}
+
+.main-navigation .container{
+  display: flex;
+  justify-content: space-between;
+}
+
+.main-navigation .container div {
+	display: flex;
+	align-items: center;
+}
+
+.heder__logo {
+	height: 42px;
+	display: inline-block;
+	padding-top: 13px;
+	padding: 13px 55px 0;
+	box-sizing: border-box;
+	background-color: #ee3843;
+	margin-right: 17px;
+	position: relative;
+}
+
+.heder__logo:after {
+	content: '';
+	height: 5px;
+	width: 100%;
+	background-color: #c02c36;
+	position: absolute;
+	left: 0;
+	bottom: -5px;
+}
+
+.main-navigation_search_img {
+	opacity: 0.3;
+}
+
+.main-navigation_search {
+	background-color: transparent;
+	border: 0;
+	height: 100%;
+	position: relative;
+	top: 0;
+	outline: none;
+	margin-left: 15px;
+	color: #fff;
+}
+
+.order-button {
+	background-color: #63a63e;
+	padding-left: 20px;
+	padding-right: 20px;
+	color: #fff;
+	height: 42px;
+	font-size: 17px;
+	line-height: 42px;
+
+
+}
+/*a {
   text-decoration: none;
 }
 
@@ -180,4 +249,4 @@ a {
   width: 141px;
   height: 48px;
   background-color: #ee3643;
-}
+}/
