@@ -32,7 +32,7 @@ header .main-navigation {
   background-color: #293449;
 }
 
-.main-navigation .container{
+.main-navigation .container {
   display: flex;
   justify-content: space-between;
 }
@@ -49,7 +49,6 @@ header .main-navigation {
 	padding: 13px 55px 0;
 	box-sizing: border-box;
 	background-color: #ee3843;
-	margin-right: 17px;
 	position: relative;
 }
 
@@ -61,6 +60,26 @@ header .main-navigation {
 	position: absolute;
 	left: 0;
 	bottom: -5px;
+}
+
+.button_search {
+padding-left: 17px;
+padding-right: 42px;
+color: #fff;
+height: 42px;
+display: flex;
+align-items: center;
+height: 42px;
+line-height: 42px;
+transition: 0.3s;
+}
+
+.button_search:hover {
+	background-color: #212a3a;
+}
+
+.button_search:focus {
+	background-color: #fff;
 }
 
 .main-navigation_search_img {
@@ -76,6 +95,12 @@ header .main-navigation {
 	outline: none;
 	margin-left: 15px;
 	color: #fff;
+	font: inherit;
+	font-size: 17px;
+}
+
+.main-navigation_search::placeholder {
+	color: #fff;
 }
 
 .order-button {
@@ -86,9 +111,141 @@ header .main-navigation {
 	height: 42px;
 	font-size: 17px;
 	line-height: 42px;
+	transition: 0.3s;
+}
 
+.order-button:hover {
+	background-color: #5fbb2d;
+}
+
+.order-button:active {
+	background-color: #518534
+}
+
+.header-oder_link {
+	padding-left: 15px;
+	padding-right: 30px;
+	color: #fff;
+	font-size: 17px;
+	display: flex;
+	align-items: center;
+	height: 42px;
+	line-height: 42px;
+	transition: 0.3s;
+}
+
+
+.header-oder_link:hover {
+	background-color: #212a3a;
+}
+
+.header-oder_link:active {
+	background-color:  #161d29;
+}
+
+.header-oder_link img {
+	opacity: 0.3;
+	margin-right: 15px;
+}
+.header-oder_link:first-of-type {
+	margin-left: 0;
+}
+
+.container {
+  width: 940px;
+  margin: 0 auto;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.main-navigation {
+  font-size: 17px;
+  line-height: 18px;
+  color: #fff;
+  background-color: #293449;
+  list-style: none;
+}
+
+.main-navigation a {
+  color: #fff;
+}
+
+.main-navigation a:hover,
+.main-navigation a:focus {
+  background-color: #212a3a
+}
+
+
+
+.text {
+  color: #ee3643;
+  font-size: 16px;
+  line-height: 23px;
+	background-color: rbga;
 
 }
+
+.tel-number {
+  color: #ee3643;
+  font-size: 21 px;
+  line-height: 21px;
+  font-weight: 400;
+}
+
+.tel-icon {
+  vertical-align: sub;
+}
+
+.address {
+  color: #32425c;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 400;
+}
+
+.user-navigation {
+  color: #000;
+  font-size: 21px;
+  line-height: 21px;
+  font-weight: 400px;
+}
+
+.main-site-navigation {
+ background-color: #32425c;
+ align-items: center;
+ color: #fff;
+
+}
+
+.main-site-navigation:after {
+ content: '';
+ height: 5px;
+ width: 100%;
+ background-color: #1d2739;
+ position: absolute;
+ left: 0;
+ bottom: 165px;
+}
+
+ul {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 100%;
+	background-color: #32425c;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	color: #fff;
+	border-bottom: solid 5px #1d2739;
+}
+
+
+
+
+
 /*a {
   text-decoration: none;
 }
