@@ -371,6 +371,37 @@ header ul {
   align-items: center;
 	margin-left: 130px;
 	margin-right: 130px;
+	margin-bottom: 21px;
+}
+
+.popular {
+	display: flex;
+	align-items: center;
+	width: 940px;
+	height: 89px;
+	background-color: #f9f5f0;
+	margin-left: 130px;
+	margin-right: 130px;
+	margin-bottom: 20px;
+
+}
+
+.popular-name {
+	color: #32425c;
+	width: 290px;
+	height: 30px;
+	margin-left: 158px;
+}
+
+.popular-button {
+	width: 253px;
+	height: 38px;
+	margin:25px 24px 26px;
+	background-color: #ee3643;
+	color: #fff;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
 .product {
@@ -439,63 +470,184 @@ header ul {
 	justify-content: space-between;
 	margin-left: 130px;
 	margin-right: 130px;
+	width: 960px;
+	margin-left: auto;
+	margin-right: auto;
 }
 
-.proizvoditel-log-1 {
+.proizvoditel li {
+	height: 145px;
 	border: 1px solid #eaeaea;
-	padding: 58px 23px 56px 28px;
-	margin-right: 20px;
-	margin-bottom: 20px;
+	width: calc(25% - 22px);
+	display: flex;
+	align-items: center;
+	margin: 0 10px 20px;
+	justify-content: center;
+
 }
 
-.proizvoditel-log-2 {
-	border: 1px solid #eaeaea;
-	padding: 50px 49px 55px 48px;
-	margin-right: 20px;
-	margin-bottom: 20px;
+.service {
+	margin-top: 85px;
+	margin-bottom: 79px;
+	background-color: rgba (0,0,0,0);
+	width: 1200px;
+	height: 522px;
 }
 
-.proizvoditel-log-3 {
-	border: 1px solid #eaeaea;
-	padding: 48px 37px 53px 37px;
-	margin-right: 20px;
-	margin-bottom: 20px;
+.div-service {
+
 }
 
-.proizvoditel-log-4 {
-	border: 1px solid #eaeaea;
-	padding: 21px 11px 36px 9px;
-	margin-right: 20px;
-	margin-bottom: 20px;
+.div-service h3 {
+	width: 428px;
+	height: 40px;
+	margin-left: 130px;
 }
 
-.proizvoditel-log-5 {
-	border: 1px solid #eaeaea;
-	padding: 58px 23px 56px 28px;
-	margin-right: 20px;
-	margin-bottom: 20px;
+.div-service p {
+	margin-left: 130px;
+	margin-top: 15px;
+	width: 500px;
+	height: 49px;
 }
 
-.proizvoditel-log-6 {
-	border: 1px solid #eaeaea;
-	padding: 35px 51px 37px 48px;
-	margin-right: 20px;
-	margin-bottom: 20px;
+.service ul {
+	list-style: none;
+	margin-left: 130px;
 }
 
-.proizvoditel-log-7 {
-	border: 1px solid #eaeaea;
-	padding: 23px 34px 26px 35px;
-	margin-right: 20px;
-	margin-bottom: 20px;
+.service li {
+	background-color: #32425c;
+	width: 240px;
+	height: 61px;
+	padding-left: 22px;
+	padding-top: 14px;
 }
 
-.proizvoditel-log-8 {
-	border: 1px solid #eaeaea;
-	padding: 34px 6px 42px 10px;
-	margin-right: 20px;
-	margin-bottom: 20px;
+.service a {
+	color: #fff;
+	padding-top: 70px;
 }
+
+.delivery {
+	display: block;
+	align-items: center;
+	margin-left: 450px;
+}
+
+.delivery h3 {
+	width: 305px;
+	height: 36px;
+	color: #32425c;
+}
+
+.delivery img {
+	margin-right: 131p;
+	margin-bottom: 0;
+}
+
+.technomart {
+	display: flex;
+	align-items: center;
+	margin-bottom: 86px;
+
+}
+
+.technomart-div {
+	margin-left: 130px;
+}
+
+.technomart-contact {
+
+}
+
+/*footer*/
+
+.footer-container {
+	width: 100%;
+	height: 300px;
+	background-color: #32425c;
+	margin-top: 86px;
+}
+
+footer .heder__logo {
+	margin-left: 130px;
+	width: 220px;
+	height: 68px;
+
+}
+
+.footer-address {
+	margin-left: 133px;
+	color: #f1f5f7;
+	margin-top: 94px;
+}
+
+.footer-container p {
+	margin-left: 133px;
+	color: #f1f5f7;
+	margin-top: 0;
+}
+
+footer ul {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+  list-style: none;
+	height: 24px;
+}
+
+.footer-contact-ul {
+	margin-left: 523px;
+	margin-right: 100px;
+}
+
+.footer-contact {
+	color: #f1f5f7;
+	margin-right: 30px;
+	margin-top: 37px;
+}
+
+.footer-sentece-ul {
+	margin-left: 546px;
+	margin-right: 100px;
+}
+
+.footer-sentece {
+	color: #ffd180;
+	margin-bottom: 74px;
+	margin-right: 30px;
+}
+
+.connection {
+	display: flex;
+	align-items: center;
+	background-color: #293449;
+	width: 100%;
+	height: 130px;
+	color: #fff;
+}
+
+.connection p {
+	margin-left: 131px;
+
+}
+
+.connection a {
+	color: #ffd180;
+}
+
+.connection ul {
+
+}
+
+.connection li {
+	/*width: 44px;
+	height: 44px;
+	background-color: #212a3a;
+}
+
+
 /*display: flex;
 align-items: center;
 justify-content: space-between;
@@ -506,3 +658,16 @@ padding: 0;
 list-style: none;
 color: #fff;
 border-bottom: solid 5px #1d2739;*/
+ /*<dialog open>
+		<form>
+			<label>
+				Ваше имя:
+				<input name="fio" placeholder="Имя Фамилия">
+			</label>
+			<label>
+				Ваш e-mail:
+				<input name="fio" placeholder="email@example">
+			</label>
+			<textarea rows="20" name="text">	</textarea>
+		</form>
+	</dialog>*/
