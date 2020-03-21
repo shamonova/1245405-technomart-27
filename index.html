@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-  <title>HTML Academy: Техномарт</title>
+  <title class="visually-hidden">HTML Academy: Техномарт</title>
   <link href="./css/style.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=PT+Sans&display=swap" rel="stylesheet">
 </head>
@@ -62,7 +62,7 @@
   </header>
 
   <main>
-    <h1>HTML Academy: Техномарт</h1>
+    <h1 style="visibility: hidden; opacity: 0; position: absolute;">HTML Academy: Техномарт</h1>
   <div class="block-banner">
     <div class="banner" <div class="banner banner-orange">
       <h2 class="visually-hidden">Перфораторы. Низкие цены</h2>
@@ -87,7 +87,7 @@
      <div class="block-banner">
        <div class="banner-foto">
          <h2>Дрели Соседям на радость!</h2>
-         <a href="#">Открыть каталог</a>
+         <a href="#" class="popular-button">Открыть каталог</a>
          <img src="./img/Layer_99@2x.jpg" width="620" height="266" alt="">
        </div>
 
@@ -165,39 +165,42 @@
       <li> <img src="./img/Metabo.png" width="204" height="69" alt="metabo"> </li>
     </ul>
     <div class="service">
+      <div class="service-container">
       <div class="div-service">
         <h3> СЕРВИСЫ </h3>
         <p> Хороший интернет-магазин отличается не только ценами!<br> Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
       </div>
-
-      <ul>
-        <li> <a href=""> Доставка </a></li>
-        <li> <a href=""> Гарантия </a></li>
-        <li> <a href=""> Кредит </a></li>
-      </ul>
-      <div class="delivery">
-        <h3>Доставка</h3>
-        <p>Мы с удовольствием доставим ваш товар прямо<br> к вашему подъезду совершенно бесплатно!<br>Ведь мы не плохо заработаем,<br>
-          поднимая на ваш этаж</p>
-        <img src="./img/Layer_131.png" width="468" height="261" alt="Бибика">
+      <div class="one-more-div">
+        <ul>
+          <li> <a href=""> Доставка </a></li>
+          <li> <a href=""> Гарантия </a></li>
+          <li> <a href=""> Кредит </a></li>
+        </ul>
+        <div class="delivery">
+          <h3>Доставка</h3>
+          <p>Мы с удовольствием доставим ваш товар прямо<br> к вашему подъезду совершенно бесплатно!<br>Ведь мы не плохо заработаем,<br>
+            поднимая на ваш этаж</p>
+          <img src="./img/Layer_131.png" width="468" height="261" alt="Бибика">
+        </div>
+      </div>
       </div>
     </div>
 
     <div class="technomart">
     <div class="technomart-div">
-      <h3>Компания "ТЕХНОМАРТ"</h3>
-      <p>
-        Настоящий мужской шопинг здесь! Огромный выбор товаров для ремонта и<br>
-        строительство не оставит равнодушным любителей сэкономить на гастарбайтерах.
-      </p>
+      <h3>КОМПАНИЯ "ТЕХНОМАРТ"</h3>
+      <div class="technomart-p">
+        <p>
+          Настоящий мужской шопинг здесь! Огромный выбор товаров для ремонта и<br>
+          строительство не оставит равнодушным любителей сэкономить на гастарбайтерах.
+        </p>
 
-      <p>Мы можем доставить ваш товар в самые отдаленные точки России!<br>
-        Техномарт работает со многими транспортными компаниями:
-      </p>
-
+        <p>Мы можем доставить ваш товар в самые отдаленные точки России!<br>
+          Техномарт работает со многими транспортными компаниями:
+        </p>
+      </div>
 
       <ul>
-
         <li>
           <p>Деловые линии</p>
         </li>
@@ -209,17 +212,17 @@
           <p>ЖелДорЭкспедиция</p>
         </li>
       </ul>
-      <a href="#">Подробнее о компании</a>
+      <a href="#" class="popular-button">Подробнее о компании</a>
     </div>
 
     <div class="technomart-contact">
-      <h3>Контакты</h3>
+      <h3>КОНТАКТЫ</h3>
 
       <p>Вы можете забрать товар сами<br>
         заехав в наш офис:
       </p>
       <img src="./img/Слой_5.png" width="300" height="158" alt="">
-      <button type="button">Заблудились? Пишите нам!</button>
+      <button type="button" class="popular-button">Заблудились? Пишите нам!</button>
     </div>
     </div>
 
@@ -256,9 +259,9 @@
     <div class="connection">
       <p> 2010-2019 Компания "ТЕХНОМАРТ" <br />Все права защищены.</p>
       <ul>
-        <li><a href="#"><img src="./img/icon-vk.svg" width="25" height="15" alt=""></a></li>
-        <li><a href="#"><img src="./img/icon-fb.svg" width="25" height="15" alt=""></a></li>
-        <li><a href="#"><img src="./img/icon-insta.svg" width="25" height="15" alt=""></a></li>
+        <li><a href="#"><img src="./img/icon-vk.svg" width="" height="" alt=""></a></li>
+        <li><a href="#"><img src="./img/icon-fb.svg" width="" height="" alt=""></a></li>
+        <li><a href="#"><img src="./img/icon-insta.svg" width="" height="" alt=""></a></li>
       </ul>
       <p>Обратная связь:<br>
         <a href="">mail@htmlacademy.ru</a>

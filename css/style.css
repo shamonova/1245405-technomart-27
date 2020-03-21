@@ -26,6 +26,8 @@ a {
   text-decoration: none;
 }
 
+
+
 /*header*/
 
 header .main-navigation {
@@ -45,6 +47,7 @@ header {
 .main-navigation .container div {
 	display: flex;
 	align-items: center;
+	position: relative;
 }
 
 .heder__logo {
@@ -68,8 +71,7 @@ header {
 }
 
 .button_search {
-padding-left: 17px;
-padding-right: 42px;
+margin-right: 42px;
 color: #fff;
 height: 42px;
 display: flex;
@@ -77,6 +79,7 @@ align-items: center;
 height: 42px;
 line-height: 42px;
 transition: 0.3s;
+
 }
 
 .button_search:hover {
@@ -89,6 +92,8 @@ transition: 0.3s;
 
 .main-navigation_search_img {
 	opacity: 0.3;
+	position: absolute;
+	left: 15px;
 }
 
 .main-navigation_search {
@@ -98,14 +103,20 @@ transition: 0.3s;
 	position: relative;
 	top: 0;
 	outline: none;
-	margin-left: 15px;
+	padding-left: 47px;
 	color: #fff;
 	font: inherit;
 	font-size: 17px;
+	width: 100%;
 }
 
 .main-navigation_search::placeholder {
 	color: #fff;
+}
+
+.main-navigation_search:focus {
+	background-color: #ffffff;
+	color: #000;
 }
 
 .order-button {
@@ -120,12 +131,12 @@ transition: 0.3s;
 	width: max-content;
 }
 
-.order-button:hover {
+.main-navigation a.order-button:hover {
 	background-color: #5fbb2d;
 }
 
-.order-button:active {
-	background-color: #518534
+.main-navigation a.order-button:active {
+	background-color: #518534;
 }
 
 .header-oder_link {
@@ -153,6 +164,7 @@ transition: 0.3s;
 	opacity: 0.3;
 	margin-right: 15px;
 }
+
 .header-oder_link:first-of-type {
 	margin-left: 0;
 }
@@ -178,9 +190,12 @@ transition: 0.3s;
   color: #fff;
 }
 
-.main-navigation a:hover,
-.main-navigation a:focus {
-  background-color: #212a3a
+.main-navigation a:not(.heder__logo .order-button):hover{
+  background-color: #212a3a;
+}
+
+.main-navigation a:not(.order-button)focus {
+  background-color: #161d29;
 }
 
 .container-2 {
@@ -293,14 +308,17 @@ header ul {
 .visually-hidden {
   font-size: 0;
   visibility: hidden;
+
 }
 
 .block-banner {
 	display: flex;
 	align-items: center;
-	margin-left: 130px;
-	margin-right: 130px;
+	margin-left: auto;
+	margin-right: auto;
 	margin-bottom: 20px;
+	padding: 0 10px;
+	width: 940px;
 }
 
 .banner {
@@ -309,6 +327,7 @@ header ul {
   padding: 20px 23px;
   background-color: #ffbf47;
 	margin-right: 20px;
+	box-sizing: border-box;
 }
 
 .banner-title {
@@ -326,7 +345,7 @@ header ul {
   justify-content: center;
   width: 135px;
   height: 38px;
-  background-color: rgba(255, 255, 255, .1);
+  background-color: rgba(0, 0, 0, .1);
   color: #fff;
   font-size: 14px;
   font-weight: 400;
@@ -336,12 +355,23 @@ header ul {
 	margin-bottom: 22px;
 }
 
-.baner-link:hover {
-
+.banner-link:hover {
+background-color: rgba(0, 0, 0, .3);
 }
 
-.banner-foto {
+.banner-link:active {
+background-color: rgba(0, 0, 0, .5);
+}
 
+
+.banner-foto {
+position: relative;
+width: 620px;
+height: 266px;
+background-image: url(./img/Layer_99@2x.jpg);
+background-position: center;
+background-repeat: no-repeat;
+background-size: contain;
 }
 
 .banner-img {
@@ -360,6 +390,7 @@ header ul {
 .banner-green {
   background-color: #8ed78f;
 	margin-bottom: 20px;
+
 }
 
 .banner-orange {
@@ -380,8 +411,8 @@ header ul {
 	width: 940px;
 	height: 89px;
 	background-color: #f9f5f0;
-	margin-left: 130px;
-	margin-right: 130px;
+	margin-left: auto;
+	margin-right: auto;
 	margin-bottom: 20px;
 
 }
@@ -402,6 +433,7 @@ header ul {
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	border-radius: 2px;
 }
 
 .product {
@@ -446,6 +478,7 @@ header ul {
   font-weight: 700px;
   line-height: 20px;
 	margin-left: 17px;
+	text-align: center;
 }
 
 .value {
@@ -458,11 +491,34 @@ header ul {
   line-height: 18px;
   text-transform: uppercase;
   width: 141px;
-  height: 48px;
+  height: 38px;
   background-color: #ee3643;
+	position: relative;
+	margin: auto;
+	margin-bottom: 21px;
 }
 
-.proizvoditel{
+ .value:after {
+  content:'';
+	width: 0;
+	height: 0;
+	border-top: 19px solid transparent;
+	border-left: 19px solid #ee3643;
+	border-bottom: 19px solid transparent;
+	right: -19px;
+	position: absolute;
+}
+
+.product s {
+	display: flex;
+	align-items: center;
+  justify-content: center;
+	color: #a9a9a9;
+	margin-bottom: 14px;
+
+}
+
+.proizvoditel {
 	display: flex;
 	flex-wrap: wrap;
 	align-items: center;
@@ -473,6 +529,8 @@ header ul {
 	width: 960px;
 	margin-left: auto;
 	margin-right: auto;
+	margin-top: 0;
+	margin-bottom: 0;
 }
 
 .proizvoditel li {
@@ -487,14 +545,19 @@ header ul {
 }
 
 .service {
-	margin-top: 85px;
-	margin-bottom: 79px;
+	margin-top: 65px;
+	margin-bottom: 0px;
 	background-color: rgba (0,0,0,0);
-	width: 1200px;
+	width: 100%;
 	height: 522px;
+	background-color: #f4f8f9;
 }
 
-.div-service {
+.service-container {
+ width: 960px;
+ margin: 0 auto;
+ padding: 0 10px;
+ box-sizing: border-box;
 
 }
 
@@ -502,6 +565,8 @@ header ul {
 	width: 428px;
 	height: 40px;
 	margin-left: 130px;
+	font-size: 30px;
+	padding-top: 64px;
 }
 
 .div-service p {
@@ -511,9 +576,13 @@ header ul {
 	height: 49px;
 }
 
+.one-more-div {
+	display: flex;
+}
+
 .service ul {
 	list-style: none;
-	margin-left: 130px;
+	padding-left: 0;
 }
 
 .service li {
@@ -522,17 +591,33 @@ header ul {
 	height: 61px;
 	padding-left: 22px;
 	padding-top: 14px;
+	border-bottom-color: #345799;
+	border-top-color: #345799;
+}
+
+.service li:hover {
+	background-color: #293449;
+}
+
+.service li:active {
+	background-color: #fff;
 }
 
 .service a {
 	color: #fff;
-	padding-top: 70px;
+	font-size: 22px;
+	line-height: 60px;
+}
+
+.service a:active {
+	color: #32425c;
 }
 
 .delivery {
 	display: block;
 	align-items: center;
-	margin-left: 450px;
+	margin-left: 80px;
+
 }
 
 .delivery h3 {
@@ -542,23 +627,49 @@ header ul {
 }
 
 .delivery img {
-	margin-right: 131p;
 	margin-bottom: 0;
+  margin-left: 151px;
+
+
 }
 
 .technomart {
 	display: flex;
 	align-items: center;
+	justify-content: center;
 	margin-bottom: 86px;
 
 }
 
 .technomart-div {
 	margin-left: 130px;
+	font-size: 13px;
 }
 
 .technomart-contact {
+	margin-left: 89px;
+}
 
+.technomart-div h3 {
+	font-size: 30px;
+	margin-bottom: 24px;
+}
+
+.technomart-p {
+	display: block;
+	align-items: center;
+	justify-content: center;
+	width: 550px;
+}
+
+.technomart-div ul {
+	margin-top: 0;
+}
+
+.technomart-contact h3 {
+	font-size: 30px;
+	padding-bottom: px;
+	margin-top: 79px;
 }
 
 /*footer*/
@@ -606,6 +717,11 @@ footer ul {
 	text-decoration-line:underline;
 }
 
+.footer-contact-ul:active {
+	color: #fff;
+	opacity: 0.5;
+}
+
 .footer-contact {
 	color: #f1f5f7;
 	margin-right: 30px;
@@ -621,8 +737,9 @@ footer ul {
 	text-decoration-line:underline;
 }
 
-.footer-sentece-ul:focus {
-	
+.footer-sentece-ul:active {
+ color: #f1f5f7;
+ opacity: 0.5;
 }
 
 .footer-sentece {
@@ -649,14 +766,34 @@ footer ul {
 	color: #ffd180;
 }
 
+.connection a:hover {
+	color: #ffd180;
+}
+
+.connection a:active {
+	color: #ee3643;
+}
+
 .connection ul {
 
 }
 
 .connection li {
-	/*width: 44px;
-	height: 44px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 42px;
+	height: 42px;
 	background-color: #212a3a;
+	border-radius: 50%;
+}
+
+.connection li:hover {
+	background-color: #ee3643;
+}
+
+.connection li::after {
+	background-color: #ee3643;
 }
 
 
