@@ -368,10 +368,29 @@ background-color: rgba(0, 0, 0, .5);
 position: relative;
 width: 620px;
 height: 266px;
-background-image: url(./img/Layer_99@2x.jpg);
+background-image: url('./img/Layer_99@2x.jpg');
 background-position: center;
 background-repeat: no-repeat;
 background-size: contain;
+
+}
+
+.foto {
+	position: absolute;
+	left: 0;
+	right: 0;
+	z-index: 0;
+}
+
+.banner-foto h2 {
+	z-index: 1;
+	position: relative;
+}
+
+.banner-foto a {
+	z-index: 1;
+	position: relative;
+	bottom: 0;
 }
 
 .banner-img {
@@ -390,17 +409,19 @@ background-size: contain;
 .banner-green {
   background-color: #8ed78f;
 	margin-bottom: 20px;
+	margin-left: 20px;
 
 }
 
 .banner-orange {
   background-color: #ffc847;
+	margin-left: 20px;
 }
 
 .gallery {
 	display: flex;
   align-items: center;
-	margin-left: 130px;
+	margin-left: auto;
 	margin-right: 130px;
 	margin-bottom: 21px;
 }
@@ -450,9 +471,18 @@ background-size: contain;
 	margin-left: 20px;
 }
 
+.product:hover {
+	box-shadow: 0 10px 25px 0px rgba(41, 52, 73, 0.5);
+
+}
+
 .product-img-1 {
 	width: 184px;
 	height: 164px;
+}
+
+.product-img-1:hover {
+
 }
 
 .product-img-2 {
@@ -541,6 +571,14 @@ background-size: contain;
 	align-items: center;
 	margin: 0 10px 20px;
 	justify-content: center;
+}
+
+.proizvoditel li:hover {
+	box-shadow: 0 4px 10px 0 rgba(41, 52, 73, 0.5);
+}
+
+.proizvoditel li:active {
+	box-shadow: 0 4px 10px 0 rgba(41, 52, 73, 0.5);
 
 }
 
@@ -591,8 +629,10 @@ background-size: contain;
 	height: 61px;
 	padding-left: 22px;
 	padding-top: 14px;
-	border-bottom-color: #345799;
-	border-top-color: #345799;
+	border-bottom: 1px solid #293449;
+	border-top: 1px solid #4b5d70;
+	box-shadow: 0 0 0 10px rgba(0,25,1,0.5);
+
 }
 
 .service li:hover {
@@ -617,7 +657,9 @@ background-size: contain;
 	display: block;
 	align-items: center;
 	margin-left: 80px;
-
+	background-image: url('./img/Layer_131.png');
+	background-position: right;
+	background-repeat: no-repeat;
 }
 
 .delivery h3 {
@@ -628,9 +670,6 @@ background-size: contain;
 
 .delivery img {
 	margin-bottom: 0;
-  margin-left: 151px;
-
-
 }
 
 .technomart {
@@ -648,11 +687,13 @@ background-size: contain;
 
 .technomart-contact {
 	margin-left: 89px;
+
 }
 
 .technomart-div h3 {
 	font-size: 30px;
 	margin-bottom: 24px;
+	margin-top: 79px;
 }
 
 .technomart-p {
@@ -660,6 +701,10 @@ background-size: contain;
 	align-items: center;
 	justify-content: center;
 	width: 550px;
+
+}
+.technomart-p p {
+padding-bottom: 15px;
 }
 
 .technomart-div ul {
@@ -668,8 +713,35 @@ background-size: contain;
 
 .technomart-contact h3 {
 	font-size: 30px;
-	padding-bottom: px;
+	padding-bottom:24 px;
 	margin-top: 79px;
+}
+
+/*catalog*/
+.catalog_in_catalog {
+display: flex;
+align-items: flex-start;
+list-style: none;
+margin-left: 129px;
+color: #000000;
+}
+
+.catalog_in_catalog li {
+color: #000;
+padding-right: 10px;
+}
+
+.hammer_drill {
+	background-color: #f2f6f8;
+	color: #32425c;
+	display: flex;
+	align-items: flex-start;
+ justify-content: center;
+	size: 30px;
+	margin-left: 130px;
+	padding-left: 28px;
+	padding-right: 713px;
+	height: 89px;
 }
 
 /*footer*/
@@ -684,9 +756,14 @@ background-size: contain;
 footer .heder__logo {
 	margin-left: 130px;
 	width: 220px;
-	height: 68px;
-
+	height: 64px;
+  display: inline-block;
+	padding-top: 21px;
+  padding-left: 42px;
+	padding-right: 42px;
+	padding-bottom: 21px;
 }
+
 
 .footer-address {
 	margin-left: 133px;
